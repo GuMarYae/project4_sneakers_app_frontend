@@ -47,7 +47,7 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
       />
       <input
         type="text"
-        placeholder="Year Release"
+        placeholder="Enter Year Release"
         onChange={handleChange}
         value={formData.year}
         name="year"
