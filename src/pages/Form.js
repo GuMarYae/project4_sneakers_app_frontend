@@ -26,7 +26,7 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
     <form onSubmit={handleSubmission}>
       <input
         type="text"
-        placeholder="Enter brand"
+        placeholder="Enter Brand"
         onChange={handleChange}
         value={formData.brand}
         name="brand"

@@ -3,6 +3,10 @@ import AllPosts from "./pages/AllPosts";
 import SinglePost from "./pages/SinglePost";
 import Form from "./pages/Form";
 
+//==============================================================
+import Modal from "./components/Modal";
+//==============================================================
+
 // Import Hooks from React
 import { useState, useEffect } from "react";
 
@@ -108,10 +112,33 @@ function App() {
   //////////////////////////
   // Returned JSX
   //////////////////////////
+  //==============================================
+  const BUTTON_WRAPPER_STYLES = {
+    position: "relative",
+    display:"flex",
+    justifyContent:"center",
+    
+    zIndex: 1,
+
+    //==============================================
+  };
+
+  //===================================++======
+  const [isOpen, setIsOpen] = useState(false);
+  //===================================++======
 
   return (
     <div className="App">
       <h1 style={h1}>My Sneakers and Shoes List</h1>
+
+      <div style={BUTTON_WRAPPER_STYLES}>
+        <button onClick={() => setIsOpen(true)}>open modal</button>
+
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          fancy Modal
+        </Modal>
+      </div>
+
       <Link to="/new">
         <button style={button}>Create New sneaker!</button>
       </Link>
@@ -152,6 +179,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
