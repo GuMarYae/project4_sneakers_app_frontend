@@ -26,30 +26,35 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
     <form onSubmit={handleSubmission}>
       <input
         type="text"
+        placeholder="Enter brand"
         onChange={handleChange}
         value={formData.brand}
         name="brand"
       />
       <input
         type="text"
+        placeholder="Enter Name of Brand"
         onChange={handleChange}
         value={formData.name}
         name="name"
       />
       <input
         type="text"
+        placeholder="Enter the Sale Price"
         onChange={handleChange}
         value={formData.cost}
         name="cost"
       />
       <input
         type="text"
+        placeholder="Year Release"
         onChange={handleChange}
         value={formData.year}
         name="year"
       />
       <input
         type="text"
+        placeholder="Enter image URL"
         onChange={handleChange}
         value={formData.image}
         name="image"
