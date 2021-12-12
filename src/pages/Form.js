@@ -62,7 +62,7 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
             />
             <input
               type="text"
-              placeholder="Enter the Sale Price"
+              placeholder="Enter Sale Price"
               onChange={handleChange}
               value={formData.cost}
               name="cost"
