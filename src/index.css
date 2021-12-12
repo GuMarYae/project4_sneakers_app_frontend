@@ -17,7 +17,8 @@ code {
 
 .shoesIndex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   background-color: "#d5ffff";
   text-align: center;
   border: 2px solid;
@@ -49,4 +50,9 @@ code {
 .singleItem h4 {
   color: #4b9cd3;
   font-weight: 400;
+}
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
 }

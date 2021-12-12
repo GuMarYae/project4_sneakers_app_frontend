@@ -115,59 +115,63 @@ function App() {
   //==============================================
   const BUTTON_WRAPPER_STYLES = {
     position: "relative",
-    display:"flex",
-    margin:"auto",
-    justifyContent:"center",
+    display: "flex",
+    margin: "auto",
+    justifyContent: "center",
     zIndex: 1,
 
     //==============================================
   };
 
-
   return (
-    <div className="App">
-      <h1 style={h1}>Shoe w'Rack</h1>
-      <Link to="/new">
-        <button style={button}>Create New sneaker or Shoe!</button>
-      </Link>
+    <>
 
-      <Routes>
-        <Route path="/" element={<AllPosts posts={posts} />} />
-        <Route
-          path="/post/:id"
-          element={
-            <SinglePost
-              posts={posts}
-              edit={getTargetSneaker}
-              deleteSneaker={deleteSneaker}
-            />
-          }
-        />
-        <Route
-          path="/new"
-          element={
-            <Form
-              initialSneaker={nullSneaker}
-              handleSubmit={addSneakers}
-              buttonLabel="Create Sneaker"
-            />
-          }
-        />
-        <Route
-          path="/edit"
-          element={
-            <Form
-              initialSneaker={targetSneaker}
-              handleSubmit={updateSneaker}
-              buttonLabel="Update Sneaker"
-            />
-          }
-        />
-      </Routes>
-    </div>
+<h1 style={h1}>Shoe w'Rack</h1>
+        <Link to="/new">
+          <button style={button}>Create New sneaker or Shoe!</button>
+        </Link>
+      <div className="App">
+        {/* <h1 style={h1}>Shoe w'Rack</h1>
+        <Link to="/new">
+          <button style={button}>Create New sneaker or Shoe!</button>
+        </Link> */}
+
+        <Routes>
+          <Route path="/" element={<AllPosts posts={posts} />} />
+          <Route
+            path="/post/:id"
+            element={
+              <SinglePost
+                posts={posts}
+                edit={getTargetSneaker}
+                deleteSneaker={deleteSneaker}
+              />
+            }
+          />
+          <Route
+            path="/new"
+            element={
+              <Form
+                initialSneaker={nullSneaker}
+                handleSubmit={addSneakers}
+                buttonLabel="Create Sneaker"
+              />
+            }
+          />
+          <Route
+            path="/edit"
+            element={
+              <Form
+                initialSneaker={targetSneaker}
+                handleSubmit={updateSneaker}
+                buttonLabel="Update Sneaker"
+              />
+            }
+          />
+        </Routes>
+      </div>
+    </>
   );
 }
-
-
 
 export default App;
