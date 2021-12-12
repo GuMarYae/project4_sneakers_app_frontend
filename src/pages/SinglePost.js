@@ -14,18 +14,19 @@ const SinglePost = ({posts, edit, deleteSneaker}) => {
     // Style Object
     /////////////////////
     const div = {
-        textAlign: "center",
-        border: "3px solid gold",
-        borderRadius:"3em",
-        width: "25%",
-        margin: "30px auto",
-        boxShadow: "0 0 10px rgba(0, 0, 0, .5)",
+        // textAlign: "center",
+        // border: "3px solid grey",
+        // borderRadius:"3em",
+        // width: "35%",
+        // margin: "30px auto",
+        // boxShadow: "0 0 10px rgba(0, 0, 0, .5)",
 
     }
 
 
     
-    return <div style={div}>   
+    return <div class="singleItem">
+    <div style={div}>   
       <h1>{post?.brand}</h1>
       <h2>{post?.name}</h2>
       <h4>{post?.cost}</h4>
@@ -36,6 +37,7 @@ const SinglePost = ({posts, edit, deleteSneaker}) => {
         <Link to="/">
             <button>Go Back to Home</button>
         </Link>
+    </div>
     </div>
 }
 
