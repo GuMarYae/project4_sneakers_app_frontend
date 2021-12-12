@@ -126,7 +126,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={h1}>My Sneakers and Shoes List</h1>
+      <h1 style={h1}>Shoe w'Rack</h1>
       <Link to="/new">
         <button style={button}>Create New sneaker or Shoe!</button>
       </Link>

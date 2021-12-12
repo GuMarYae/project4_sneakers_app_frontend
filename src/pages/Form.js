@@ -23,73 +23,72 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
     //push user back to main page
     navigate("/");
   };
- //==============================================
- const BUTTON_WRAPPER_STYLES = {
-  position: "relative",
-  display:"flex",
-  margin:"auto",
-  justifyContent:"center",
-  zIndex: 1,
-
   //==============================================
-};
+  const BUTTON_WRAPPER_STYLES = {
+    position: "relative",
+    display: "flex",
+    margin: "auto",
+    justifyContent: "center",
+    zIndex: 1,
+
+    //==============================================
+  };
 
   //===================================++======
   const [isOpen, setIsOpen] = useState(false);
-  //===================================++======  
+  //===================================++======
 
   return (
-<>
-<div style={BUTTON_WRAPPER_STYLES}>
-        <button onClick={() => setIsOpen(true)}>open modal</button>
+    <>
+      <div style={BUTTON_WRAPPER_STYLES}>
+        <button onClick={() => setIsOpen(true)}>Enter the fields here</button>
 
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}><br></br>
-        <form onSubmit={handleSubmission}>
-      <input
-        type="text"
-        placeholder="Enter Brand"
-        onChange={handleChange}
-        value={formData.brand}
-        name="brand"
-      />
-      <input
-        type="text"
-        placeholder="Enter Name of Brand"
-        onChange={handleChange}
-        value={formData.name}
-        name="name"
-      />
-      <input
-        type="text"
-        placeholder="Enter the Sale Price"
-        onChange={handleChange}
-        value={formData.cost}
-        name="cost"
-      />
-      <input
-        type="text"
-        placeholder="Enter Year Release"
-        onChange={handleChange}
-        value={formData.year}
-        name="year"
-      />
-      <input
-        type="text"
-        placeholder="Enter image URL"
-        onChange={handleChange}
-        value={formData.image}
-        name="image"
-      />
-      <input type="submit" value={buttonLabel} />
-    </form>
-      
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          <br></br>
+          <form onSubmit={handleSubmission}>
+            <input
+              type="text"
+              placeholder="Enter Brand"
+              onChange={handleChange}
+              value={formData.brand}
+              name="brand"
+            />
+            <input
+              type="text"
+              placeholder="Enter Name of Brand"
+              onChange={handleChange}
+              value={formData.name}
+              name="name"
+            />
+            <input
+              type="text"
+              placeholder="Enter the Sale Price"
+              onChange={handleChange}
+              value={formData.cost}
+              name="cost"
+            />
+            <input
+              type="text"
+              placeholder="Enter Year Release"
+              onChange={handleChange}
+              value={formData.year}
+              name="year"
+            />
+            <input
+              type="text"
+              placeholder="Enter image URL"
+              onChange={handleChange}
+              value={formData.image}
+              name="image"
+            />
+            <input type="submit" value={buttonLabel} />
+          </form>
         </Modal>
         <Link to="/">
-            <button>Go Back to Home</button>
+          <button>Go Back to Home</button>
         </Link>
       </div>
-   
-  </>
+    </>
   );
 };
 
