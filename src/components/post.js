@@ -6,16 +6,17 @@ const Post = ({ post }) => {
   // Style Objects
   ///////////////////////////
   const div = {
+
     // backgroundColor: "#d5ffff",
     textAlign: "center",
     border: "2px solid",
     borderRadius: "3em",
     margin: "10px auto",
-    width: "15%",
+    width: "17%",
   };
 
   return (
-    <div style={div}>
+    <div class ="shoesIndex" style={div}>
       
       <Link to={`/post/${post.id}`}>
       <h1>{post.brand}</h1>
