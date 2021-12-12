@@ -2,14 +2,14 @@ import React from "react";
 
 const MODAL_STYLES = {
   position: "fixed",
-  top: "33%",
+  top: "40%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   backgroundColor: "#D3D3D3",
   padding: "2%",
   zIndex: 1000,
   opacity: 0.9,
-  border: "0.1em solid grey",
+  border: "0.1em solid #f5fcff",
   borderRadius: "2em",
 };
 

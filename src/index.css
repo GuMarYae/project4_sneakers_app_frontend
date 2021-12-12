@@ -68,7 +68,20 @@ input{
 .closeButton button {
   background-color: darkRed;
   display: block;
-  margin: auto
+  margin: auto;
+
+
+  /* position: fixed;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #D3D3D3;
+  padding: 2%;
+  z-index: 1000;
+  opacity: 0.9;
+  border: 0.1em solid #f5fcff;
+  border-radius: 2em;
+} */
 }
 
 .createSneakerButton {
