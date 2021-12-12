@@ -10,12 +10,12 @@ const Post = ({ post }) => {
     // backgroundColor: "#d5ffff",
     // textAlign: "center",
     // border: "2px solid",
-    // borderRadius: "3em",
+    borderRadius: "3em",
     // margin: "10px auto",
     // display: "flexBox",
     // flexDirection: "column",
     // width: "17%",
-    // boxShadow: "0 0 10px rgba(0, 0, 0, 1)",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 1)",
 
     // display: "grid",
     // gridTemplateColumns: "repeat(3, 1fr)"
