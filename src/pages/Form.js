@@ -1,5 +1,7 @@
+import Modal from "../components/Modal";
+
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
   const navigate = useNavigate();
@@ -21,9 +23,28 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
     //push user back to main page
     navigate("/");
   };
+ //==============================================
+ const BUTTON_WRAPPER_STYLES = {
+  position: "relative",
+  display:"flex",
+  margin:"auto",
+  justifyContent:"center",
+  zIndex: 1,
+
+  //==============================================
+};
+
+  //===================================++======
+  const [isOpen, setIsOpen] = useState(false);
+  //===================================++======  
 
   return (
-    <form onSubmit={handleSubmission}>
+<>
+<div style={BUTTON_WRAPPER_STYLES}>
+        <button onClick={() => setIsOpen(true)}>open modal</button>
+
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}><br></br>
+        <form onSubmit={handleSubmission}>
       <input
         type="text"
         placeholder="Enter Brand"
@@ -61,6 +82,14 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
       />
       <input type="submit" value={buttonLabel} />
     </form>
+      
+        </Modal>
+        <Link to="/">
+            <button>Go Back to Home</button>
+        </Link>
+      </div>
+   
+  </>
   );
 };
 

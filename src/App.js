@@ -116,31 +116,19 @@ function App() {
   const BUTTON_WRAPPER_STYLES = {
     position: "relative",
     display:"flex",
+    margin:"auto",
     justifyContent:"center",
-    
     zIndex: 1,
 
     //==============================================
   };
 
-  //===================================++======
-  const [isOpen, setIsOpen] = useState(false);
-  //===================================++======
 
   return (
     <div className="App">
       <h1 style={h1}>My Sneakers and Shoes List</h1>
-
-      <div style={BUTTON_WRAPPER_STYLES}>
-        <button onClick={() => setIsOpen(true)}>open modal</button>
-
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          fancy Modal
-        </Modal>
-      </div>
-
       <Link to="/new">
-        <button style={button}>Create New sneaker!</button>
+        <button style={button}>Create New sneaker or Shoe!</button>
       </Link>
 
       <Routes>
@@ -179,5 +167,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

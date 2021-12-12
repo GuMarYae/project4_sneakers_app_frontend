@@ -2,12 +2,17 @@ import React from "react"
 
 const MODAL_STYLES = {
     position:"fixed",
-    top:"50",
+    top:"33%",
     left:"50%",
     transform:"translate(-50%, -50%)",
-    backgroundColor:"#fff",
-    padding:"50px",
-    zIndex:1000
+    backgroundColor:"#D3D3D3",
+    padding:"2%",
+    zIndex:1000,
+    opacity:0.9,
+    border:"0.1em solid grey",
+    borderRadius:"2em",
+    
+
 }
 
 const OVERLAY_STYLES ={
@@ -27,10 +32,11 @@ const Modal =({children, open, onClose})=>{
 return(
 
     <>
-    <div style={OVERLAY_STYLES}></div>
+    {/* <div style={OVERLAY_STYLES}></div> */}
     <div style = {MODAL_STYLES}>
-        <button onClick={onClose}>Close MOdal</button>
+        <button onClick={onClose}>Close</button>
         {children}
+    
     </div>
     </>
 
