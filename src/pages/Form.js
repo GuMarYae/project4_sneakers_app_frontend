@@ -55,7 +55,7 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
             />
             <input
               type="text"
-              placeholder="Enter Name of Brand"
+              placeholder="Enter Model Name"
               onChange={handleChange}
               value={formData.name}
               name="name"
