@@ -42,9 +42,9 @@ const Form = ({ initialSneaker, handleSubmit, buttonLabel }) => {
     <>
       <div style={BUTTON_WRAPPER_STYLES}>
         <button onClick={() => setIsOpen(true)}>Enter the fields here</button>
-
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
           <br></br>
+
           <form onSubmit={handleSubmission}>
             <input
               type="text"

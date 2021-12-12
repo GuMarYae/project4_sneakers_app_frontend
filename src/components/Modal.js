@@ -30,7 +30,7 @@ const Modal = ({ children, open, onClose }) => {
     <>
       {/* <div style={OVERLAY_STYLES}></div> */}
 
-      <div style={MODAL_STYLES}>
+      <div class="closeButton" style={MODAL_STYLES}>
         <button onClick={onClose}>Close</button>
         {children}
       </div>

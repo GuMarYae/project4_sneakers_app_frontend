@@ -56,3 +56,23 @@ code {
   display: flex;
   flex-wrap: wrap;
 }
+
+input{
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: auto;
+
+}
+
+.closeButton button {
+  background-color: darkRed;
+  display: block;
+  margin: auto
+}
+
+.createSneakerButton {
+  background-color: blue;
+  display: block;
+  margin: auto
+}

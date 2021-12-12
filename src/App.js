@@ -125,18 +125,19 @@ function App() {
 
   return (
     <>
+      <h1 style={h1}>Shoe w'Rack</h1>
+      <Link to="/new">
+        <button style={button}>Create New sneaker or Shoe!</button>
+      </Link>
 
-<h1 style={h1}>Shoe w'Rack</h1>
-        <Link to="/new">
-          <button style={button}>Create New sneaker or Shoe!</button>
-        </Link>
+
       <div className="App">
         {/* <h1 style={h1}>Shoe w'Rack</h1>
         <Link to="/new">
           <button style={button}>Create New sneaker or Shoe!</button>
         </Link> */}
 
-        <Routes>
+        <Routes className="routes">
           <Route path="/" element={<AllPosts posts={posts} />} />
           <Route
             path="/post/:id"
@@ -148,6 +149,7 @@ function App() {
               />
             }
           />
+
           <Route
             path="/new"
             element={
@@ -158,7 +160,8 @@ function App() {
               />
             }
           />
-          <Route
+
+          <Route className ="createSneakerButton"
             path="/edit"
             element={
               <Form
