@@ -12,7 +12,13 @@ const Post = ({ post }) => {
     border: "2px solid",
     borderRadius: "3em",
     margin: "10px auto",
+    // display:"flex",
+    // flexDirection: "row",
     width: "17%",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 1)",
+    
+    // display: "grid",
+    // gridTemplateColumns: "repeat(3, 1fr)"
   };
 
   return (

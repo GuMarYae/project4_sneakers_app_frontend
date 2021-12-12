@@ -18,7 +18,9 @@ const SinglePost = ({posts, edit, deleteSneaker}) => {
         border: "3px solid gold",
         borderRadius:"3em",
         width: "25%",
-        margin: "30px auto"
+        margin: "30px auto",
+        boxShadow: "0 0 10px rgba(0, 0, 0, .5)",
+
     }
 
 
