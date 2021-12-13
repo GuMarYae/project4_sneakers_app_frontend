@@ -22,7 +22,7 @@ const Post = ({ post }) => {
   };
 
   return (
-    <div class="shoesIndex">
+    <div className="shoesIndex">
       <div style={div}>
         <Link to={`/post/${post.id}`}>
           <h1>{post.brand}</h1>
