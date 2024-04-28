@@ -34,7 +34,8 @@ function App() {
 
   const navigate = useNavigate();
 
-  const url = "https://project-4-sneakers-app-backend.herokuapp.com/sneakers/";
+  //const url = "https://project-4-sneakers-app-backend.herokuapp.com/sneakers/";
+  const url = "https://project4-sneakers-app-backend.onrender.com/sneakers";
 
   // state to hold list of sneakers..  the stgate that holds the array of posts frm the API when we get it
   const [posts, setPosts] = useState([]);
@@ -130,7 +131,6 @@ function App() {
         <button style={button}>Create New sneaker or Shoe!</button>
       </Link>
 
-
       <div className="App">
         {/* <h1 style={h1}>Shoe w'Rack</h1>
         <Link to="/new">
@@ -161,7 +161,8 @@ function App() {
             }
           />
 
-          <Route className ="createSneakerButton"
+          <Route
+            className="createSneakerButton"
             path="/edit"
             element={
               <Form
